@@ -1,4 +1,4 @@
-# Stachification Station
+# Mustachify UI
 
 This is a basic proof of concept app that will allow users to upload a photo and have it stachified.
 
@@ -39,7 +39,7 @@ So feel free to modify, remove, or add any code you feel is necessary.
 
 ## ToDo
 1. Use Pipfile instead of `requirements.txt`
-2. Figure out how the Flask app will interact with Rekognition script
+2. Figure out how the Flask app will interact with Rekognition script.  Will everythign be in the same repo or stay separate?
 3. Retreive Mustachified photo and present to the user
 3. Layer in some CSS to provide a better UX
 
