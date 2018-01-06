@@ -1,5 +1,6 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template, request, redirect, url_for
+import os, json, boto3
+from settings import *
 
 app = Flask(__name__)
 
@@ -12,16 +13,14 @@ def index():
 @app.route("/submit-form/", methods = ["POST"])
 def submit_form():
 
-  # We'll need something less boilerplate than this....
-
   # Collect the data posted from the HTML form in account.html:
   avatar_url = request.form["avatar-url"]
 
   # Provide some procedure for storing the new details
-  update_account(username, full_name, avatar_url)
+  # update_account(username, full_name, avatar_url)
 
-  # Redirect to the user's profile page, if appropriate
-  return redirect(url_for('profile'))
+  # For now, we'll just load homepage again.
+  return render_template('home.html'), 201
 
 
 # Listen for GET requests to yourdomain.com/sign_s3/

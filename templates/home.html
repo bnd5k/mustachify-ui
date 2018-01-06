@@ -1,7 +1,7 @@
 <html>
   <body>
 
-    <h1>Edit your account</h1>
+    <h1>'Stache-ification Station</h1>
 
     <hr>
 
@@ -11,15 +11,12 @@
     <p id="status">Please select a file</p>
     <img style="border:1px solid gray;width:300px;" id="preview" src="/static/media/default.png">
 
-    <h2>Your information</h2>
-
     <form method="POST" action="/submit-form/">
       <input type="hidden" id="avatar-url" name="avatar-url" value="/static/media/default.png">
 
       <hr>
-      <h2>Save changes</h2>
 
-      <input type="submit" value="Update profile">
+      <input type="submit" value="IronStachify Your Photo">
     </form>
 
 
@@ -44,6 +41,7 @@
           if(xhr.status === 200 || xhr.status === 204){
             document.getElementById('preview').src = url;
             document.getElementById('avatar-url').value = url;
+            console.log('success!')
           }
           else{
             alert('Could not upload file.');
