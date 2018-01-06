@@ -1,4 +1,4 @@
-* Stachification Station
+# Stachification Station
 
 This is a basic proof of concept app that will allow users to upload a photo and have it stachified.
 
@@ -8,7 +8,7 @@ The basic process is
 3. The Flask app displays the stached image
 4. The Flask app empties the S3 bucket that stores uploads.
 
-** Local Development
+## Local Development
 
 Before you start, you'll need to create an S3 bucket and provide credentials in your development environment.
 I used a `.env` file. There's a sample .env file located at the root directory of this project, in case you
@@ -29,7 +29,7 @@ $ flask run
 In your browser, nagivate to `localhost:5000/` to see the site.
 
 
-** Contributors
+## Contributors
 
 This codebase was begun by cobbling together info from the [Flask Quickstart Guide](http://flask.pocoo.org/docs/0.12/quickstart/)
 and this [S3 direct upload tutorial](https://devcenter.heroku.com/articles/s3-upload-python).
@@ -37,7 +37,7 @@ and this [S3 direct upload tutorial](https://devcenter.heroku.com/articles/s3-up
 In other words, if you're reading this, then you probably know more about Python and Flask best practices than I do.
 So feel free to modify, remove, or add any code you feel is necessary.
 
-** ToDo
+## ToDo
 1. Use Pipfile instead of `requirements.txt`
 2. Figure out how the Flask app will interact with Rekognition script
 3. Retreive Mustachified photo and present to the user
