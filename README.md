@@ -36,3 +36,10 @@ and this [S3 direct upload tutorial](https://devcenter.heroku.com/articles/s3-up
 
 In other words, if you're reading this, then you probably know more about Python and Flask best practices than I do.
 So feel free to modify, remove, or add any code you feel is necessary.
+
+** ToDo
+1. Use Pipfile instead of `requirements.txt`
+2. Figure out how the Flask app will interact with Rekognition script
+3. Retreive Mustachified photo and present to the user
+3. Layer in some CSS to provide a better UX
+
