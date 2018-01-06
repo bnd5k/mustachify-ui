@@ -17,6 +17,8 @@ want an example.
 For directions on CORS config, feel free to consult the toturial mentioned in the
 Contributors section of this README.
 
+Consult the `requirements.txt` file for information on this prjects dependencies.
+
 Once you have the dependencies installed, run the following command in terminal:
 
 ```
